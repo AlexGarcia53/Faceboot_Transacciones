@@ -1,0 +1,11 @@
+interfaces\ILogsUsuarios.class
+com\mycompany\faceboot_transacciones\LogsComentarios.class
+interfaces\ILogsComentarios.class
+com\mycompany\faceboot_transacciones\FachadaTransacciones.class
+interfaces\ILogsHashtags.class
+interfaces\ITransacciones.class
+com\mycompany\faceboot_transacciones\FabricaTransacciones.class
+com\mycompany\faceboot_transacciones\LogsHashtags.class
+com\mycompany\faceboot_transacciones\LogsPublicaciones.class
+com\mycompany\faceboot_transacciones\LogsUsuarios.class
+interfaces\ILogsPublicaciones.class
