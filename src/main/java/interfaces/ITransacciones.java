@@ -22,6 +22,6 @@ public interface ITransacciones {
     public void logErrorRegistroPublicacion(Publicacion publicacion);
     public void logRegistroComentario(Comentario comentario);
     public void logErrorRegistroComentario(Comentario comentario);
-    public void logBusquedaEtiquieta(Hashtag hashtag, Usuario usuario);  
-    public void logErrorBusquedaEtiquieta(Hashtag hashtag, Usuario usuario);
+    public void logBusquedaEtiquieta(Hashtag hashtag);  
+    public void logErrorBusquedaEtiquieta(Hashtag hashtag);
 }

@@ -20,13 +20,13 @@ public class LogsHashtags implements ILogsHashtags {
     
     
     @Override
-    public void busqueda(Hashtag hashtag, Usuario usuario) {
-        log.info("Se realizó una búsqueda de la etiquieta: "+hashtag.getNombre()+" por el usuario: "+usuario.getUsuario());
+    public void busqueda(Hashtag hashtag) {
+        log.info("Se realizó una búsqueda de la etiquieta: "+hashtag.getNombre());
     }
 
     @Override
-    public void errorBusqueda(Hashtag hashtag, Usuario usuario) {
-        log.info("No se pudo realizar la búsqueda de la etiquieta: "+hashtag.getNombre()+" por el usuario: "+usuario.getUsuario());
+    public void errorBusqueda(Hashtag hashtag) {
+        log.info("No se pudo realizar la búsqueda de la etiquieta: "+hashtag.getNombre());
     }
     
 }

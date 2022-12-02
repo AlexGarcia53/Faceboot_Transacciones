@@ -73,13 +73,13 @@ public class FachadaTransacciones implements ITransacciones {
     }
 
     @Override
-    public void logBusquedaEtiquieta(Hashtag hashtag, Usuario usuario) {
-       logsHashtags.busqueda(hashtag, usuario);
+    public void logBusquedaEtiquieta(Hashtag hashtag) {
+       logsHashtags.busqueda(hashtag);
     }
 
     @Override
-    public void logErrorBusquedaEtiquieta(Hashtag hashtag, Usuario usuario) {
-       logsHashtags.errorBusqueda(hashtag, usuario);
+    public void logErrorBusquedaEtiquieta(Hashtag hashtag) {
+       logsHashtags.errorBusqueda(hashtag);
     }
 
 }

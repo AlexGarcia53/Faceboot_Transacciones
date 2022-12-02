@@ -12,6 +12,6 @@ import dominio.Usuario;
  * @author Gael
  */
 public interface ILogsHashtags {
-    public void busqueda(Hashtag hashtag, Usuario usuario);  
-    public void errorBusqueda(Hashtag hashtag, Usuario usuario);
+    public void busqueda(Hashtag hashtag);  
+    public void errorBusqueda(Hashtag hashtag);
 }
