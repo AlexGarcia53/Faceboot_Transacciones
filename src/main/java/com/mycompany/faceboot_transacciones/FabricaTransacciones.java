@@ -7,12 +7,19 @@ package com.mycompany.faceboot_transacciones;
 import interfaces.ITransacciones;
 
 /**
+ * Clase Fachada que implementa la interfaz ITransacciones.
  *
- * @author Gael
+ * @author Equipo Broker.
  */
 public class FabricaTransacciones {
+    /**
+     * Atributo de tipo ITransacciones.
+     */
     private static ITransacciones transacciones;
-
+    /**
+     * Método que regresa una FachadaTransacciones.
+     * @return FachadaTransacciones
+     */
     public static ITransacciones crearFachadaTransacciones(){
         return new FachadaTransacciones();
     }

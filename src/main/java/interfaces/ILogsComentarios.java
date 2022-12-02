@@ -7,8 +7,9 @@ package interfaces;
 import dominio.Comentario;
 
 /**
+ * Interfaz que tiene las operaciones de LogsComentarios.
  *
- * @author Gael
+ * @author Equipo Broker.
  */
 public interface ILogsComentarios {
     public void registro(Comentario comentario);

@@ -10,8 +10,9 @@ import dominio.Publicacion;
 import dominio.Usuario;
 
 /**
+ * Interfaz que tiene las operaciones de Transacciones.
  *
- * @author Gael
+ * @author Equipo Broker.
  */
 public interface ITransacciones {
     public void logInicioSesion(Usuario usuario);

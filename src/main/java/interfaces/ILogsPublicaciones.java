@@ -7,8 +7,9 @@ package interfaces;
 import dominio.Publicacion;
 
 /**
+ * Interfaz que tiene las operaciones de LogsPublicaciones.
  *
- * @author Gael
+ * @author Equipo Broker.
  */
 public interface ILogsPublicaciones {
     public void registro(Publicacion publicacion);

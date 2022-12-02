@@ -8,8 +8,9 @@ import dominio.Hashtag;
 import dominio.Usuario;
 
 /**
+ * Interfaz que tiene las operaciones de LogsHashtags.
  *
- * @author Gael
+ * @author Equipo Broker.
  */
 public interface ILogsHashtags {
     public void busqueda(Hashtag hashtag);  

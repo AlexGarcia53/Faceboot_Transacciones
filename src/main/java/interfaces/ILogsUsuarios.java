@@ -7,8 +7,9 @@ package interfaces;
 import dominio.Usuario;
 
 /**
+ * Interfaz que tiene las operaciones de LogsUsuarios.
  *
- * @author Gael
+ * @author Equipo Broker.
  */
 public interface ILogsUsuarios {
     

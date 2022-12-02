@@ -10,22 +10,36 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
+ * Clase LogsComentarios que implementa ILogsComentarios.
  *
- * @author Gael
+ * @author Equipo Broker.
  */
-public class LogsComentarios implements ILogsComentarios{
-    
+public class LogsComentarios implements ILogsComentarios {
+
+    /**
+     * Atributo de tipo Logger.
+     */
     private static Logger log = LogManager.getLogger(LogsComentarios.class);
 
+    /**
+     * Log que se registra cuando un usuario registra un comentario.
+     *
+     * @param comentario comentario registrado.
+     */
     @Override
     public void registro(Comentario comentario) {
-       log.info("Se registró un comentario del usuario "+"Nombre: "+comentario.getUsuario().getUsuario()+" Email: "+comentario.getUsuario().getEmail());
+        log.info("Se registró un comentario del usuario " + "Nombre: " + comentario.getUsuario().getUsuario() + " Email: " + comentario.getUsuario().getEmail());
     }
 
+    /**
+     * Log que se registra cuando un usuario obtiene un error al registrar un
+     * comentario.
+     *
+     * @param comentario comentario registrado.
+     */
     @Override
     public void errorRegistro(Comentario comentario) {
-       log.error("No se pudo registrar el comentario del usuario "+"Nombre: "+comentario.getUsuario().getUsuario()+" Email: "+comentario.getUsuario().getEmail());
+        log.error("No se pudo registrar el comentario del usuario " + "Nombre: " + comentario.getUsuario().getUsuario() + " Email: " + comentario.getUsuario().getEmail());
     }
-    
-    
+
 }
