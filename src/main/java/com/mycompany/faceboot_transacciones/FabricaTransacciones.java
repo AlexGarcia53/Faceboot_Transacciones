@@ -12,15 +12,21 @@ import interfaces.ITransacciones;
  * @author Equipo Broker.
  */
 public class FabricaTransacciones {
+
     /**
      * Atributo de tipo ITransacciones.
      */
     private static ITransacciones transacciones;
+
     /**
      * Método que regresa una FachadaTransacciones.
+     *
      * @return FachadaTransacciones
      */
-    public static ITransacciones crearFachadaTransacciones(){
-        return new FachadaTransacciones();
+    public static ITransacciones crearFachadaTransacciones() {
+        if (transacciones == null) {
+            transacciones = new FachadaTransacciones();
+        }
+        return transacciones;
     }
 }

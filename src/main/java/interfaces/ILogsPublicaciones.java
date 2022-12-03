@@ -12,6 +12,17 @@ import dominio.Publicacion;
  * @author Equipo Broker.
  */
 public interface ILogsPublicaciones {
+    /**
+     * Log que se registra cuando un usuario registra una publicación.
+     *
+     * @param publicacion publicación registrada.
+     */
     public void registro(Publicacion publicacion);
+    /**
+     * Log que se registra cuando un usuario obtiene un error al registrar una
+     * publicación.
+     *
+     * @param publicacion publicación registrada.
+     */
     public void errorRegistro(Publicacion publicacion);
 }

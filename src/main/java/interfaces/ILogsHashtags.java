@@ -13,6 +13,17 @@ import dominio.Usuario;
  * @author Equipo Broker.
  */
 public interface ILogsHashtags {
-    public void busqueda(Hashtag hashtag);  
+    /**
+     * Log que se registra cuando un usuario realiza una busqueda de etiqueta.
+     *
+     * @param hashtag hashtag buscado.
+     */
+    public void busqueda(Hashtag hashtag); 
+    /**
+     * Log que se registra cuando un usuario obtiene un error al realizar una
+     * busqueda de etiqueta.
+     *
+     * @param hashtag hashtag buscado.
+     */
     public void errorBusqueda(Hashtag hashtag);
 }
